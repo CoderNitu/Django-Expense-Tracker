@@ -23,8 +23,6 @@ This project helps users to manage their monthly income and expenses, categorize
 
 ---
 
----
-
 ## ⚡ Setup Instructions
 
 ### 1️⃣ Clone the Repository
