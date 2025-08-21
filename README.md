@@ -1,7 +1,6 @@
 # 💰 Django Expense Tracker
 
-A simple yet powerful **Expense Tracker Web Application** built with **Django**.  
-This project helps users to manage their monthly income and expenses, categorize spending, and keep track of remaining balance.
+A simple yet powerful **Expense Tracker Web Application** built with **Django**.This project helps users to manage their monthly income and expenses, categorize spending, and keep track of remaining balance.
 
 ---
 
