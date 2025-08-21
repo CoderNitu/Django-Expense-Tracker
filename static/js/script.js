@@ -213,7 +213,7 @@ document.getElementById("addExpenseForm").addEventListener("submit", function(e)
         description: document.getElementById("description").value
     };
 
-    fetch("/api/expenses/", {
+    fetch('https://nitu123.pythonanywhere.com/api/expenses/', {
         method: "POST",
         headers: {
             "Content-Type": "application/json",
