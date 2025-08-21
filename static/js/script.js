@@ -217,13 +217,25 @@ document.getElementById("addExpenseForm").addEventListener("submit", function(e)
         method: "POST",
         headers: {
             "Content-Type": "application/json",
+            "X-CSRFToken": getCSRFToken()
         },
+        credentials: "same-origin",
         body: JSON.stringify(expenseData),
     })
-    .then(response => response.json())
+    .then(response => {
+        if (!response.ok) throw new Error("Failed to add expense");
+        return response.json();
+    })
     .then(data => {
         alert("Expense added successfully!");
-        location.reload(); // Refresh to show new expense in table
+        fetchExpenses();  // reload table without full page refresh
+        updateRemainingBalance();
+        document.getElementById("addExpenseForm").reset();
     })
-    .catch(error => console.error("Error:", error));
-});
+    .catch(error => {
+        console.error("Error:", error);
+        alert("Could not add expense.");
+    });
+
+}); 
+
