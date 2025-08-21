@@ -70,7 +70,7 @@ docker-compose -f docker-compose.dev.yml up --build
 
 ### 📸 Screenshots
 
-<img width="1600" height="900" alt="Image" src="https://github.com/user-attachments/assets/e0cc19ed-c6a1-41eb-a92a-29e835880069" />
+<img width="1488" height="732" alt="Image" src="https://github.com/user-attachments/assets/637e85b5-d2c6-4a04-915d-d01e72fee2fa" />
 
 
 ### 👨‍💻 Developer
